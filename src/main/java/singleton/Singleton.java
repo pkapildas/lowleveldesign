@@ -30,10 +30,12 @@ public class Singleton  implements Serializable {
     }
 
     public static Singleton getInstance() {
-        if(instance ==null) {
+        Singleton result = instance;
+        if(result ==null) {
             synchronized (Singleton.class) {
-                if (instance == null) {
-                    instance = new Singleton();
+                 Singleton result = instance;
+                if (result == null) {
+                  result =  instance = new Singleton();
                     System.out.println("Object Created");
 
                 }
