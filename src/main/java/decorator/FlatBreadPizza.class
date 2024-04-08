@@ -1,9 +1,0 @@
-public class FlatBreadPizza extends Pizza{
-public override String description(){
-  return 'Flat Bread';
- }
- 
- public override double cost(){
-  return 200.0;
- }
-}
