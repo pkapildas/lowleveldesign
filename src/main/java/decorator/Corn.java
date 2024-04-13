@@ -1,13 +1,13 @@
 package decorator;
 
-public class Onion extends Topping{
+public class Corn extends Topping{
 Pizza pizza;
-public Onion(Pizza pizza){
+public Corn(Pizza pizza){
   this.pizza = pizza;
  }
  
  public   String description(){
-  return this.pizza.description() + ", Onion";
+  return this.pizza.description() + ", Cheese";
  }
 public   double cost(){
   return this.pizza.cost() + 15.0;

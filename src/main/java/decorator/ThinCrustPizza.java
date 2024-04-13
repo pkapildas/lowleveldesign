@@ -1,8 +1,10 @@
+package decorator;
+
 public class ThinCrustPizza extends Pizza{
 
  @Override
 public  String description(){
-  return 'Thin Crust';
+  return "Thin Crust";
  }
  
  @Override

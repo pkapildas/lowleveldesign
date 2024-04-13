@@ -1,3 +1,5 @@
+package decorator;
+
 public class OrderPizza{
     
     public OrderPizza(String pizzaName){
@@ -6,10 +8,10 @@ public class OrderPizza{
     
  public OrderPizza(String pizzaName, Boolean addCheese, Boolean addCorn, Boolean addOnion){
         Pizza pizza = null;
-        if(pizzaName == 'Thin Crust'){
+        if(pizzaName == "Thin Crust"){
             pizza = new ThinCrustPizza();
         }
-        if(pizzaName == 'Flat Bread'){
+        if(pizzaName == "Flat Bread"){
              pizza = new FlatBreadPizza();
            
         }
@@ -35,6 +37,7 @@ public class OrderPizza{
  }
     
     void displayItems(Pizza pizza){
-         System.debug('Added '+pizza.description()+ ', Total is Rs. '+pizza.cost());
+
+        System.out.println("Added "+pizza.description()+ ", Total is Rs. "+pizza.cost());
     }
 }
