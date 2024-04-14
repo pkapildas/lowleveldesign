@@ -1,3 +1,4 @@
+package logger;
 public class ErrorLogProcessor extends LogProcessor{
     public ErrorLogProcessor(LogProcessor nexLogProcessor){
         super(nexLogProcessor);
