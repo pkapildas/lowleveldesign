@@ -33,7 +33,7 @@ public class Singleton  implements Serializable {
         Singleton result = instance;
         if(result ==null) {
             synchronized (Singleton.class) {
-                 Singleton result = instance;
+                   result = instance;
                 if (result == null) {
                   result =  instance = new Singleton();
                     System.out.println("Object Created");
