@@ -67,7 +67,7 @@ public class Game {
             }
         }
         for (int i =0 ; i< board.size ; ++i){
-            if(board.board[i][col] == null || board.board[col][i].pieceType!=pieceType){
+            if(board.board[i][col] == null || board.board[i][col].pieceType!=pieceType){
                 colMatch =false;
             }
         }
@@ -78,7 +78,7 @@ public class Game {
         }
         for (int i =0 , j=board.size-1; i< board.size ; ++i, j--){
             if(board.board[i][j] == null || board.board[i][j].pieceType!=pieceType){
-                diagMatch =false;
+                antiDiagMatch =false;
             }
         }
         return  rowMatch||colMatch || diagMatch || antiDiagMatch;

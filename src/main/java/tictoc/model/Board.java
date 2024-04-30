@@ -23,7 +23,7 @@ public class Board {
         List<Pair> free = new ArrayList<>();
         for(int i =0; i< size ;++i){
         for(int j =0; j< size ;++j) {
-            if (board[i][j] != null) {
+            if (board[i][j] == null) {
                 Pair pair = new Pair(i, j);
                 free.add(pair);
             }
